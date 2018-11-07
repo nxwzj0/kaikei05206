@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="kessai1"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="505"
+		 pageHeight="802"
+		 columnWidth="505"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="kessaisha" isForPrompting="false" class="jp.co.bsnnet.sofia.dto.zaimu.common.print.KessaishaDto"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="61"  isSplitAllowed="true" >
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="0"
+						width="503"
+						height="0"
+						key="line-1"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="0"
+						width="0"
+						height="60"
+						key="line-2"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="60"
+						width="504"
+						height="0"
+						key="line-3"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="503"
+						y="0"
+						width="0"
+						height="60"
+						key="line-4"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="1"
+						y="12"
+						width="503"
+						height="0"
+						key="line-11"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="63"
+						y="0"
+						width="0"
+						height="60"
+						key="line-12"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="126"
+						y="0"
+						width="0"
+						height="60"
+						key="line-13"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="189"
+						y="0"
+						width="0"
+						height="60"
+						key="line-14"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="252"
+						y="0"
+						width="0"
+						height="60"
+						key="line-15"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="2"
+						width="63"
+						height="10"
+						key="textField-1"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha01()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="63"
+						y="2"
+						width="63"
+						height="10"
+						key="textField-2"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha02()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="126"
+						y="2"
+						width="63"
+						height="10"
+						key="textField-3"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha03()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="189"
+						y="2"
+						width="63"
+						height="10"
+						key="textField-4"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha04()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="252"
+						y="2"
+						width="63"
+						height="10"
+						key="textField-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha05()]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="315"
+						y="0"
+						width="0"
+						height="60"
+						key="line-16"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="378"
+						y="0"
+						width="0"
+						height="60"
+						key="line-17"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="315"
+						y="2"
+						width="63"
+						height="10"
+						key="textField-6"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha06()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="378"
+						y="2"
+						width="63"
+						height="10"
+						key="textField-7"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha07()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="441"
+						y="2"
+						width="62"
+						height="10"
+						key="textField-8"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kessaisha}.getKessaisha08()]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="441"
+						y="0"
+						width="0"
+						height="60"
+						key="line-18"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>
