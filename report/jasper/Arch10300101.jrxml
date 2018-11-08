@@ -599,7 +599,7 @@
 					<reportElement
 						x="269"
 						y="173"
-						width="94"
+						width="85"
 						height="11"
 						key="staticText-228"
 						positionType="FixRelativeToBottom"/>
@@ -607,7 +607,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[内　消費税等相当額]]></text>
+				<text><![CDATA[ 内　消費税等相当額]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" pattern="#,##0;-#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
