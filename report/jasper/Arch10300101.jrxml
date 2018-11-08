@@ -565,7 +565,7 @@
 					<textElement>
 						<font size="10"/>
 					</textElement>
-				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getShozoku().getShozokuNm()]]></textFieldExpression>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getShozokuNmP()]]></textFieldExpression>
 				</textField>
 				<staticText>
 					<reportElement
