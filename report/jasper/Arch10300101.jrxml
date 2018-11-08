@@ -177,7 +177,7 @@
 						style="MSゴシック"
 						x="102"
 						y="96"
-						width="401"
+						width="167"
 						height="11"
 						key="textField-2"
 						positionType="FixRelativeToBottom"/>
@@ -411,68 +411,12 @@
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 </graphicElement>
 				</line>
-				<staticText>
-					<reportElement
-						x="57"
-						y="83"
-						width="11"
-						height="11"
-						key="staticText-161"
-						positionType="FixRelativeToBottom"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
-					</textElement>
-				<text><![CDATA[関]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="41"
-						y="83"
-						width="11"
-						height="11"
-						key="staticText-162"
-						positionType="FixRelativeToBottom"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
-					</textElement>
-				<text><![CDATA[機]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="24"
-						y="83"
-						width="11"
-						height="11"
-						key="staticText-163"
-						positionType="FixRelativeToBottom"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
-					</textElement>
-				<text><![CDATA[行]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
-						x="7"
-						y="83"
-						width="11"
-						height="11"
-						key="staticText-164"
-						positionType="FixRelativeToBottom"/>
-					<box></box>
-					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
-					</textElement>
-				<text><![CDATA[執]]></text>
-				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
-						x="102"
-						y="83"
-						width="401"
+						x="372"
+						y="84"
+						width="131"
 						height="11"
 						key="textField-16"
 						positionType="FixRelativeToBottom"/>
@@ -579,6 +523,121 @@
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
 				<text><![CDATA[分]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="270"
+						y="84"
+						width="73"
+						height="11"
+						key="staticText-224"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[所　　　　属]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="1"
+						y="84"
+						width="73"
+						height="11"
+						key="staticText-225"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[事　　　　業]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="102"
+						y="84"
+						width="167"
+						height="11"
+						key="textField-128"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getShozoku().getShozokuNm()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="270"
+						y="96"
+						width="73"
+						height="11"
+						key="staticText-226"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[決 裁 年月日]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="372"
+						y="96"
+						width="131"
+						height="11"
+						key="staticText-227"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[　　　　　　年　　月　　日]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="269"
+						y="173"
+						width="94"
+						height="11"
+						key="staticText-228"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[内　消費税等相当額]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="#,##0;-#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						mode="Transparent"
+						x="376"
+						y="173"
+						width="110"
+						height="11"
+						key="textField-129"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="2"></box>
+					<textElement textAlignment="Right">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="11" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{kihon}.getTaxKingaku()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="487"
+						y="173"
+						width="15"
+						height="11"
+						key="staticText-229"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="4" rightPadding="1"></box>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[円]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
