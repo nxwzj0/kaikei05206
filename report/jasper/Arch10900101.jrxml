@@ -325,7 +325,7 @@
 						x="100"
 						y="184"
 						width="0"
-						height="35"
+						height="36"
 						key="line-32"
 						positionType="Float"/>
 					<graphicElement stretchType="NoStretch">
@@ -453,7 +453,7 @@
 						x="0"
 						y="57"
 						width="0"
-						height="162"
+						height="163"
 						key="line-137"
 						positionType="FixRelativeToBottom"/>
 					<graphicElement stretchType="NoStretch">
@@ -465,7 +465,7 @@
 						x="503"
 						y="57"
 						width="0"
-						height="162"
+						height="163"
 						key="line-138"
 						positionType="FixRelativeToBottom"/>
 					<graphicElement stretchType="NoStretch">
@@ -563,7 +563,7 @@
 						x="339"
 						y="184"
 						width="0"
-						height="35"
+						height="36"
 						key="line-145"
 						positionType="FixRelativeToBottom"/>
 					<graphicElement stretchType="NoStretch">
@@ -673,7 +673,7 @@
 						x="239"
 						y="184"
 						width="0"
-						height="35"
+						height="36"
 						key="line-153"
 						positionType="FixRelativeToBottom"/>
 					<graphicElement stretchType="NoStretch">
@@ -985,7 +985,7 @@
 					<reportElement
 						x="239"
 						y="83"
-						width="90"
+						width="76"
 						height="11"
 						key="staticText-279"
 						positionType="FixRelativeToBottom"/>
@@ -993,7 +993,7 @@
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[所　　　　    属]]></text>
+				<text><![CDATA[所　　　　  属]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -1028,7 +1028,7 @@
 					<reportElement
 						x="239"
 						y="94"
-						width="90"
+						width="76"
 						height="11"
 						key="staticText-281"
 						positionType="FixRelativeToBottom"/>
@@ -1036,7 +1036,7 @@
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[決  裁  年 月 日]]></text>
+				<text><![CDATA[決 裁 年 月 日]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
