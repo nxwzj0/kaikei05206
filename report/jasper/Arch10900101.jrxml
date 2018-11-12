@@ -488,9 +488,9 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
-						x="89"
+						x="329"
 						y="83"
-						width="150"
+						width="174"
 						height="11"
 						key="textField-16"
 						positionType="FixRelativeToBottom"/>
@@ -983,38 +983,38 @@
 				</textField>
 				<staticText>
 					<reportElement
-						x="0"
-						y="83"
-						width="73"
-						height="11"
-						key="staticText-279"
-						positionType="FixRelativeToBottom"/>
-					<box></box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
-					</textElement>
-				<text><![CDATA[所　　　　属]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
 						x="239"
 						y="83"
 						width="90"
 						height="11"
-						key="staticText-280"
+						key="staticText-279"
 						positionType="FixRelativeToBottom"/>
 					<box></box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[事　　　　    業]]></text>
+				<text><![CDATA[所　　　　    属]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="83"
+						width="73"
+						height="11"
+						key="staticText-280"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[事　　　　業]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
-						x="329"
+						x="89"
 						y="83"
-						width="174"
+						width="150"
 						height="11"
 						key="textField-144"
 						positionType="FixRelativeToBottom"/>
