@@ -157,11 +157,11 @@
 		<group  name="kihon" >
 			<groupExpression><![CDATA[]]></groupExpression>
 			<groupHeader>
-			<band height="209"  isSplitAllowed="true" >
+			<band height="220"  isSplitAllowed="true" >
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="172"
+						y="181"
 						width="503"
 						height="0"
 						key="line-110"
@@ -188,7 +188,7 @@
 				<staticText>
 					<reportElement
 						x="-1"
-						y="109"
+						y="121"
 						width="73"
 						height="11"
 						key="staticText-30"
@@ -203,7 +203,7 @@
 					<reportElement
 						style="MSゴシック"
 						x="102"
-						y="158"
+						y="170"
 						width="401"
 						height="11"
 						key="textField-98"
@@ -233,7 +233,7 @@
 					<reportElement
 						style="MSゴシック"
 						x="102"
-						y="109"
+						y="121"
 						width="401"
 						height="11"
 						key="textField-3"
@@ -247,7 +247,7 @@
 				<line direction="BottomUp">
 					<reportElement
 						x="100"
-						y="172"
+						y="181"
 						width="0"
 						height="37"
 						key="line-32"
@@ -287,7 +287,7 @@
 						style="MSゴシック"
 						mode="Transparent"
 						x="100"
-						y="185"
+						y="194"
 						width="137"
 						height="13"
 						key="textField-34"
@@ -301,7 +301,7 @@
 				<line direction="TopDown">
 					<reportElement
 						x="251"
-						y="185"
+						y="194"
 						width="0"
 						height="14"
 						key="line-106"
@@ -313,7 +313,7 @@
 				<line direction="TopDown">
 					<reportElement
 						x="351"
-						y="185"
+						y="194"
 						width="0"
 						height="14"
 						key="line-108"
@@ -326,7 +326,7 @@
 					<reportElement
 						style="MSゴシック"
 						x="100"
-						y="198"
+						y="207"
 						width="136"
 						height="11"
 						key="textField-52"
@@ -340,7 +340,7 @@
 				<staticText>
 					<reportElement
 						x="-1"
-						y="122"
+						y="134"
 						width="73"
 						height="11"
 						key="staticText-90"
@@ -355,7 +355,7 @@
 					<reportElement
 						style="MSゴシック"
 						x="102"
-						y="122"
+						y="134"
 						width="401"
 						height="11"
 						key="textField-99"
@@ -370,7 +370,7 @@
 					<reportElement
 						style="MSゴシック"
 						x="102"
-						y="134"
+						y="146"
 						width="401"
 						height="11"
 						key="textField-100"
@@ -385,7 +385,7 @@
 					<reportElement
 						style="MSゴシック"
 						x="102"
-						y="146"
+						y="158"
 						width="401"
 						height="11"
 						key="textField-101"
@@ -401,7 +401,7 @@
 						x="0"
 						y="57"
 						width="0"
-						height="152"
+						height="162"
 						key="line-137"
 						positionType="FixRelativeToBottom"/>
 					<graphicElement stretchType="NoStretch">
@@ -413,7 +413,7 @@
 						x="503"
 						y="57"
 						width="0"
-						height="152"
+						height="162"
 						key="line-138"
 						positionType="FixRelativeToBottom"/>
 					<graphicElement stretchType="NoStretch">
@@ -436,9 +436,9 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
-						x="296"
-						y="85"
-						width="69"
+						x="334"
+						y="83"
+						width="169"
 						height="11"
 						key="textField-16"
 						positionType="FixRelativeToBottom"/>
@@ -451,7 +451,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="172"
+						y="181"
 						width="100"
 						height="13"
 						key="staticText-181"
@@ -481,7 +481,7 @@
 				<staticText>
 					<reportElement
 						x="237"
-						y="185"
+						y="194"
 						width="15"
 						height="13"
 						key="staticText-215"
@@ -494,9 +494,9 @@
 				</staticText>
 				<staticText>
 					<reportElement
-						x="367"
-						y="83"
-						width="85"
+						x="5"
+						y="108"
+						width="82"
 						height="11"
 						key="staticText-216"
 						positionType="FixRelativeToBottom"/>
@@ -509,9 +509,9 @@
 				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
-						x="452"
-						y="83"
-						width="50"
+						x="102"
+						y="108"
+						width="401"
 						height="11"
 						key="textField-127"
 						positionType="FixRelativeToBottom"/>
@@ -524,7 +524,7 @@
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="185"
+						y="194"
 						width="503"
 						height="0"
 						key="line-150"
@@ -536,7 +536,7 @@
 				<line direction="TopDown">
 					<reportElement
 						x="0"
-						y="198"
+						y="207"
 						width="503"
 						height="0"
 						key="line-151"
@@ -548,7 +548,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="185"
+						y="194"
 						width="100"
 						height="13"
 						key="staticText-217"
@@ -562,7 +562,7 @@
 				<staticText>
 					<reportElement
 						x="0"
-						y="198"
+						y="207"
 						width="100"
 						height="11"
 						key="staticText-218"
@@ -578,7 +578,7 @@
 						style="MSゴシック"
 						mode="Transparent"
 						x="352"
-						y="185"
+						y="194"
 						width="136"
 						height="13"
 						key="textField-128"
@@ -592,7 +592,7 @@
 				<staticText>
 					<reportElement
 						x="252"
-						y="185"
+						y="194"
 						width="99"
 						height="13"
 						key="staticText-219"
@@ -606,7 +606,7 @@
 				<staticText>
 					<reportElement
 						x="237"
-						y="172"
+						y="181"
 						width="15"
 						height="13"
 						key="staticText-220"
@@ -620,7 +620,7 @@
 				<staticText>
 					<reportElement
 						x="488"
-						y="185"
+						y="194"
 						width="15"
 						height="13"
 						key="staticText-221"
@@ -636,7 +636,7 @@
 						style="MSゴシック"
 						mode="Transparent"
 						x="100"
-						y="172"
+						y="181"
 						width="137"
 						height="13"
 						key="textField-131"
@@ -653,7 +653,7 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 					<reportElement
 						mode="Opaque"
 						x="1"
-						y="208"
+						y="219"
 						width="503"
 						height="0"
 						key="line-142"
@@ -681,7 +681,7 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 						style="MSゴシック"
 						x="102"
 						y="83"
-						width="119"
+						width="135"
 						height="11"
 						key="textField-138"
 						positionType="FixRelativeToBottom"/>
@@ -693,8 +693,8 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 				</textField>
 				<staticText>
 					<reportElement
-						x="220"
-						y="84"
+						x="246"
+						y="83"
 						width="73"
 						height="11"
 						key="staticText-233"
@@ -707,7 +707,7 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 				</staticText>
 				<staticText>
 					<reportElement
-						x="251"
+						x="246"
 						y="96"
 						width="73"
 						height="11"
@@ -721,9 +721,9 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 				</staticText>
 				<staticText>
 					<reportElement
-						x="367"
+						x="334"
 						y="96"
-						width="136"
+						width="169"
 						height="11"
 						key="staticText-235"
 						positionType="FixRelativeToBottom"/>
@@ -731,14 +731,14 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[　　　　　　年　　月　　日]]></text>
+				<text><![CDATA[　　　　　　年　　   月　　   日]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" pattern="#,##0;-#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
 						mode="Transparent"
 						x="351"
-						y="172"
+						y="181"
 						width="137"
 						height="13"
 						key="textField-139"
@@ -753,7 +753,7 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 				<staticText>
 					<reportElement
 						x="488"
-						y="172"
+						y="181"
 						width="15"
 						height="13"
 						key="staticText-237"
@@ -767,7 +767,7 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 				<staticText>
 					<reportElement
 						x="251"
-						y="172"
+						y="181"
 						width="100"
 						height="13"
 						key="staticText-238"
@@ -783,7 +783,7 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 				<line direction="TopDown">
 					<reportElement
 						x="351"
-						y="172"
+						y="181"
 						width="0"
 						height="14"
 						key="line-157"
@@ -796,7 +796,7 @@ $P{kihon}.getAtoKingakuSum().longValue() - $P{kihon}.getKomiKingaku().longValue(
 					<reportElement
 						mode="Opaque"
 						x="251"
-						y="172"
+						y="181"
 						width="0"
 						height="13"
 						key="line-158"
