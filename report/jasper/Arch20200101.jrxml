@@ -681,14 +681,14 @@
 						height="15"
 						key="staticText-148"
 						positionType="FixRelativeToBottom"/>
-					<box leftPadding="12">					<leftPen lineWidth="0.25" lineStyle="Solid"/>
+					<box leftPadding="8">					<leftPen lineWidth="0.25" lineStyle="Solid"/>
 					<bottomPen lineWidth="0.0" lineStyle="Solid"/>
 					<rightPen lineWidth="0.25" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[所　　　　属]]></text>
+				<text><![CDATA[所　　　　  属]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -698,13 +698,13 @@
 						height="16"
 						key="staticText-149"
 						positionType="FixRelativeToBottom"/>
-					<box leftPadding="12">					<leftPen lineWidth="0.25" lineStyle="Solid"/>
+					<box leftPadding="9">					<leftPen lineWidth="0.25" lineStyle="Solid"/>
 					<rightPen lineWidth="0.25" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[決裁 年 月日]]></text>
+				<text><![CDATA[決 裁 年 月 日]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -724,7 +724,7 @@
 					<reportElement
 						x="256"
 						y="144"
-						width="86"
+						width="99"
 						height="16"
 						key="staticText-151"
 						positionType="FixRelativeToBottom"/>
@@ -733,17 +733,17 @@
 					<rightPen lineWidth="0.25" lineStyle="Solid"/>
 </box>
 					<textElement textAlignment="Left" verticalAlignment="Middle">
-						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" size="9" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" size="10" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[内　消費税等相当額]]></text>
+				<text><![CDATA[(内　消費税等相当額]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" pattern="#,##0;-#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
 						mode="Transparent"
-						x="342"
+						x="355"
 						y="145"
-						width="145"
+						width="126"
 						height="15"
 						key="textField-99"
 						positionType="FixRelativeToBottom"/>
@@ -756,9 +756,9 @@
 				</textField>
 				<staticText>
 					<reportElement
-						x="487"
+						x="481"
 						y="145"
-						width="15"
+						width="21"
 						height="15"
 						key="staticText-152"
 						positionType="FixRelativeToBottom"/>
@@ -766,7 +766,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[円]]></text>
+				<text><![CDATA[円)]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
