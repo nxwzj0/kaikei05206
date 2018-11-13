@@ -35,7 +35,7 @@
 
 	<parameter name="kihon" isForPrompting="false" class="jp.co.bsnnet.sofia.dto.zaimu.afch1000.print.Arch10300101MainPrintDto"/>
 	<parameter name="MEISAIGYO1" isForPrompting="false" class="java.lang.Long">
-		<defaultValueExpression ><![CDATA[new Long(3)]]></defaultValueExpression>
+		<defaultValueExpression ><![CDATA[new Long(2)]]></defaultValueExpression>
 	</parameter>
 	<parameter name="MEISAIGYO2" isForPrompting="false" class="java.lang.Long">
 		<defaultValueExpression ><![CDATA[new Long(4)]]></defaultValueExpression>

@@ -680,7 +680,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[所　　　　属]]></text>
+				<text><![CDATA[所　　　　  属]]></text>
 				</staticText>
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
@@ -709,7 +709,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[決 裁 年月日]]></text>
+				<text><![CDATA[決 裁 年 月 日]]></text>
 				</staticText>
 				<staticText>
 					<reportElement

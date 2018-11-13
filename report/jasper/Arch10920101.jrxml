@@ -35,7 +35,7 @@
 
 	<parameter name="kihon" isForPrompting="false" class="jp.co.bsnnet.sofia.dto.zaimu.afch1000.print.Arch10900101MainPrintDto"/>
 	<parameter name="MEISAIGYO1" isForPrompting="false" class="java.lang.Long">
-		<defaultValueExpression ><![CDATA[new Long(3)]]></defaultValueExpression>
+		<defaultValueExpression ><![CDATA[new Long(2)]]></defaultValueExpression>
 	</parameter>
 	<parameter name="MEISAIGYO2" isForPrompting="false" class="java.lang.Long">
 		<defaultValueExpression ><![CDATA[new Long(4)]]></defaultValueExpression>
@@ -657,7 +657,7 @@
 				<staticText>
 					<reportElement
 						x="240"
-						y="81"
+						y="82"
 						width="73"
 						height="11"
 						key="staticText-201"
@@ -666,7 +666,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[所　　　　属]]></text>
+				<text><![CDATA[所　　　　  属]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -700,7 +700,7 @@
 				<staticText>
 					<reportElement
 						x="240"
-						y="93"
+						y="94"
 						width="73"
 						height="11"
 						key="staticText-203"
@@ -709,13 +709,13 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[決 裁 年月日]]></text>
+				<text><![CDATA[決 裁 年 月 日]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="340"
-						y="94"
-						width="162"
+						x="339"
+						y="95"
+						width="164"
 						height="11"
 						key="staticText-204"
 						positionType="FixRelativeToBottom"/>
