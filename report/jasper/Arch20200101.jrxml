@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="Arch20200101"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="538"
+		 columnSpacing="0"
+		 leftMargin="57"
+		 rightMargin="0"
+		 topMargin="21"
+		 bottomMargin="14"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<style 
+		name="MSゴシック"
+		isDefault="true"
+		vAlign="Middle"
+		fontName="ＭＳ ゴシック"
+		pdfFontName="HeiseiKakuGo-W5"
+		pdfEncoding="UniJIS-UCS2-HW-H"
+	>
+	</style>
+
+	<parameter name="kihon" isForPrompting="false" class="jp.co.bsnnet.sofia.dto.zaimu.afch2000.print.Arch20200101MainPrintDto"/>
+	<parameter name="MEISAIGYO1" isForPrompting="false" class="java.lang.Long">
+		<defaultValueExpression ><![CDATA[new Long(15)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MEISAIGYO2" isForPrompting="false" class="java.lang.Long">
+		<defaultValueExpression ><![CDATA[new Long(23)]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" isForPrompting="true" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["C:\\javaEEworkspace\\sofiaj\\WebContent\\jasper\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="kessaisha" isForPrompting="false" class="jp.co.bsnnet.sofia.dto.zaimu.common.print.KessaishaDto"/>
+	<parameter name="previewFlg" isForPrompting="false" class="java.lang.Boolean"/>
+
+	<field name="actlChkbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlChkbn">
+		<fieldDescription><![CDATA[actlChkbn]]></fieldDescription>
+	</field>
+	<field name="actlCodeChushoKbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlCode">
+		<fieldDescription><![CDATA[actlCodeChushoKbn]]></fieldDescription>
+	</field>
+	<field name="actlCodeCustomerKbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlCode">
+		<fieldDescription><![CDATA[actlCodeCustomerKbn]]></fieldDescription>
+	</field>
+	<field name="actlCodeCustomerSyu" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlCode">
+		<fieldDescription><![CDATA[actlCodeCustomerSyu]]></fieldDescription>
+	</field>
+	<field name="actlCodeKenKbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlCode">
+		<fieldDescription><![CDATA[actlCodeKenKbn]]></fieldDescription>
+	</field>
+	<field name="actlCodeKobetuKbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlCode">
+		<fieldDescription><![CDATA[actlCodeKobetuKbn]]></fieldDescription>
+	</field>
+	<field name="actlCodePayKbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlCode">
+		<fieldDescription><![CDATA[actlCodePayKbn]]></fieldDescription>
+	</field>
+	<field name="actlCodeShikakuKbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlCode">
+		<fieldDescription><![CDATA[actlCodeShikakuKbn]]></fieldDescription>
+	</field>
+	<field name="actlCodeTaxKbn" class="jp.co.bsnnet.sofia.entity.zaimu.physical.ActlTax">
+		<fieldDescription><![CDATA[actlCodeTaxKbn]]></fieldDescription>
+	</field>
+	<field name="amstBumon" class="jp.co.bsnnet.sofia.entity.zaimu.physical.AmstBumon">
+		<fieldDescription><![CDATA[amstBumon]]></fieldDescription>
+	</field>
+	<field name="amstCustomerDto" class="jp.co.bsnnet.sofia.dto.zaimu.common.AmstCustomerDto">
+		<fieldDescription><![CDATA[amstCustomerDto]]></fieldDescription>
+	</field>
+	<field name="amstJigyo" class="jp.co.bsnnet.sofia.entity.zaimu.physical.AmstJigyo">
+		<fieldDescription><![CDATA[amstJigyo]]></fieldDescription>
+	</field>
+	<field name="amstKamokuDto" class="jp.co.bsnnet.sofia.dto.zaimu.common.AmstKamokuDto">
+		<fieldDescription><![CDATA[amstKamokuDto]]></fieldDescription>
+	</field>
+	<field name="amstKamokuHassei" class="jp.co.bsnnet.sofia.entity.zaimu.physical.AmstKamoku">
+		<fieldDescription><![CDATA[amstKamokuHassei]]></fieldDescription>
+	</field>
+	<field name="amstKamokuHasseiDto" class="jp.co.bsnnet.sofia.dto.zaimu.common.AmstKamokuDto">
+		<fieldDescription><![CDATA[amstKamokuHasseiDto]]></fieldDescription>
+	</field>
+	<field name="amstKamokuKanjyo" class="jp.co.bsnnet.sofia.entity.zaimu.physical.AmstKamoku">
+		<fieldDescription><![CDATA[amstKamokuKanjyo]]></fieldDescription>
+	</field>
+	<field name="amstProject" class="jp.co.bsnnet.sofia.entity.zaimu.physical.AmstProject">
+		<fieldDescription><![CDATA[amstProject]]></fieldDescription>
+	</field>
+	<field name="amstZaigen" class="jp.co.bsnnet.sofia.entity.zaimu.physical.AmstZaigen">
+		<fieldDescription><![CDATA[amstZaigen]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="cmstShozoku" class="jp.co.bsnnet.sofia.entity.common.physical.CmstShozoku">
+		<fieldDescription><![CDATA[cmstShozoku]]></fieldDescription>
+	</field>
+	<field name="genchouDate" class="java.util.Date">
+		<fieldDescription><![CDATA[genchouDate]]></fieldDescription>
+	</field>
+	<field name="hichoushoKbn" class="java.lang.String">
+		<fieldDescription><![CDATA[hichoushoKbn]]></fieldDescription>
+	</field>
+	<field name="hichoushoNo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[hichoushoNo]]></fieldDescription>
+	</field>
+	<field name="hilineNo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[hilineNo]]></fieldDescription>
+	</field>
+	<field name="inputKingaku" class="java.lang.Long">
+		<fieldDescription><![CDATA[inputKingaku]]></fieldDescription>
+	</field>
+	<field name="kensu" class="java.lang.Integer">
+		<fieldDescription><![CDATA[kensu]]></fieldDescription>
+	</field>
+	<field name="lineNo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[lineNo]]></fieldDescription>
+	</field>
+	<field name="shiwakeKamoku" class="jp.co.bsnnet.sofia.dto.zaimu.common.print.ShiwakeKamokuPrintDto">
+		<fieldDescription><![CDATA[shiwakeKamoku]]></fieldDescription>
+	</field>
+	<field name="taxKingaku" class="java.lang.Long">
+		<fieldDescription><![CDATA[taxKingaku]]></fieldDescription>
+	</field>
+	<field name="taxRate" class="java.lang.Double">
+		<fieldDescription><![CDATA[taxRate]]></fieldDescription>
+	</field>
+	<field name="tekiyou" class="java.lang.String">
+		<fieldDescription><![CDATA[tekiyou]]></fieldDescription>
+	</field>
+	<field name="tekiyouCd" class="java.lang.String">
+		<fieldDescription><![CDATA[tekiyouCd]]></fieldDescription>
+	</field>
+	<field name="ykKamoku" class="jp.co.bsnnet.sofia.dto.zaimu.common.print.YkKamokuPrintDto">
+		<fieldDescription><![CDATA[ykKamoku]]></fieldDescription>
+	</field>
+
+
+		<group  name="kihon" >
+			<groupExpression><![CDATA[]]></groupExpression>
+			<groupHeader>
+			<band height="192"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="1"
+						y="56"
+						width="503"
+						height="24"
+						key="textField"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" size="17" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getActlYoshiki().getPrintTitle1()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="86"
+						y="97"
+						width="417"
+						height="15"
+						key="textField-2"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="4" rightPadding="2"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" isPdfEmbedded ="true" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[new java.text.SimpleDateFormat("GGGGyy年MM月dd日", new java.util.Locale("ja","JP","JP")).format($P{kihon}.getKihyouDate())]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="12"
+						y="145"
+						width="10"
+						height="15"
+						key="staticText-22"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[収納金額]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="113"
+						width="86"
+						height="15"
+						key="staticText-93"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="12"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[収   納   日]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="161"
+						width="86"
+						height="15"
+						key="staticText-30"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="12"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[科　　　　目]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="97"
+						width="86"
+						height="15"
+						key="staticText-31"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="12"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[起   票   日]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="56"
+						width="0"
+						height="136"
+						key="line-25"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="503"
+						y="56"
+						width="0"
+						height="136"
+						key="line-27"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="241"
+						y="145"
+						width="15"
+						height="15"
+						key="staticText-24"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[円]]></text>
+				</staticText>
+				<line direction="BottomUp">
+					<reportElement
+						x="86"
+						y="81"
+						width="0"
+						height="111"
+						key="line-32"
+						positionType="Float"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="128"
+						width="503"
+						height="0"
+						key="line-34"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="80"
+						width="503"
+						height="0"
+						key="line-36"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="56"
+						width="503"
+						height="1"
+						key="line-37"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<subreport  isUsingCache="true">
+					<reportElement
+						style="MSゴシック"
+						x="0"
+						y="0"
+						width="503"
+						height="50"
+						key="subreport-1"/>
+					<subreportParameter  name="kessaisha">
+						<subreportParameterExpression><![CDATA[$P{kessaisha}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="previewFlg">
+						<subreportParameterExpression><![CDATA[$P{previewFlg}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportExpression  class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "kessai1.jasper"]]></subreportExpression>
+				</subreport>
+				<textField isStretchWithOverflow="false" pattern="#,##0;-#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="86"
+						y="145"
+						width="155"
+						height="15"
+						key="textField"
+						positionType="FixRelativeToBottom"/>
+					<box rightPadding="1"></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="12" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$P{kihon}.getKomiKingaku()]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="144"
+						width="503"
+						height="0"
+						key="line-17"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="160"
+						width="503"
+						height="0"
+						key="line-112"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="12"
+						y="129"
+						width="11"
+						height="15"
+						key="staticText-76"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[収]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="86"
+						y="113"
+						width="417"
+						height="15"
+						key="textField-55"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="4" rightPadding="2"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[new java.text.SimpleDateFormat("GGGGyy年MM月dd日", new java.util.Locale("ja","JP","JP")).format($P{kihon}.getSyuunouDate())]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="86"
+						y="129"
+						width="417"
+						height="15"
+						key="textField-56"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="4" rightPadding="2"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getActlSyuunouKbn().getCodeNm()]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="112"
+						width="503"
+						height="0"
+						key="line-118"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="29"
+						y="129"
+						width="11"
+						height="15"
+						key="staticText-120"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[納]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="46"
+						y="129"
+						width="11"
+						height="15"
+						key="staticText-121"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[方]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="63"
+						y="129"
+						width="11"
+						height="15"
+						key="staticText-122"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[法]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="86"
+						y="81"
+						width="417"
+						height="15"
+						key="textField-16"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="4"></box>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getCmstShozoku().getShozokuNm()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="86"
+						y="161"
+						width="44"
+						height="15"
+						key="staticText-96"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[（款）]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="256"
+						y="161"
+						width="44"
+						height="15"
+						key="staticText-97"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[（項）]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="177"
+						width="86"
+						height="15"
+						key="staticText-124"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="12"></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[件　　　　名]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="86"
+						y="177"
+						width="417"
+						height="15"
+						key="textField-75"
+						positionType="FixRelativeToBottom"/>
+					<box leftPadding="4" rightPadding="2"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[org.apache.commons.lang.StringUtils.substring($P{kihon}.getKenmei(),0,41)]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="176"
+						width="503"
+						height="0"
+						key="line-119"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="130"
+						y="161"
+						width="126"
+						height="15"
+						key="textField-76"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{amstKamokuDto}.kmk1().getKamokuRNm()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="300"
+						y="161"
+						width="126"
+						height="15"
+						key="textField-77"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{amstKamokuDto}.kmk2().getKamokuRNm()]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="96"
+						width="503"
+						height="0"
+						key="line-127"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="12"
+						y="81"
+						width="11"
+						height="15"
+						key="staticText-131"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[執]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="29"
+						y="81"
+						width="11"
+						height="15"
+						key="staticText-132"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[行]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="46"
+						y="81"
+						width="11"
+						height="15"
+						key="staticText-133"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[機]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="63"
+						y="81"
+						width="11"
+						height="15"
+						key="staticText-134"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[関]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="30"
+						y="145"
+						width="10"
+						height="15"
+						key="staticText-143"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[納]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="46"
+						y="145"
+						width="10"
+						height="15"
+						key="staticText-144"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[額]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="63"
+						y="145"
+						width="10"
+						height="15"
+						key="staticText-145"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[計]]></text>
+				</staticText>
+			</band>
+			</groupHeader>
+			<groupFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+			</groupFooter>
+		</group>
+		<group  name="meisai" isReprintHeaderOnEachPage="true" >
+			<groupExpression><![CDATA[]]></groupExpression>
+			<groupHeader>
+			<band height="33"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="16"
+						width="25"
+						height="16"
+						key="staticText-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[No.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="503"
+						height="16"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[内　　　　訳　　　　表]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="0"
+						width="504"
+						height="0"
+						key="line-6"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="0"
+						width="0"
+						height="33"
+						key="line-5"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="503"
+						y="0"
+						width="0"
+						height="33"
+						key="line-8"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="16"
+						width="503"
+						height="0"
+						key="line-98"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="24"
+						y="16"
+						width="0"
+						height="16"
+						key="line-10"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="32"
+						width="503"
+						height="0"
+						key="line-121"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="115"
+						y="17"
+						width="88"
+						height="16"
+						key="staticText-135"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[細節]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="26"
+						y="17"
+						width="88"
+						height="16"
+						key="staticText-136"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[目・節]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="114"
+						y="16"
+						width="0"
+						height="16"
+						key="line-128"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="203"
+						y="16"
+						width="0"
+						height="16"
+						key="line-129"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="401"
+						y="16"
+						width="0"
+						height="16"
+						key="line-131"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<staticText>
+					<reportElement
+						x="203"
+						y="17"
+						width="85"
+						height="16"
+						key="staticText-137"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[税区分／率]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="288"
+						y="17"
+						width="113"
+						height="16"
+						key="staticText-139"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[収納額]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="402"
+						y="17"
+						width="101"
+						height="16"
+						key="staticText-140"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[債務者]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="287"
+						y="16"
+						width="0"
+						height="16"
+						key="line-132"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+			</band>
+			</groupHeader>
+			<groupFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+			</groupFooter>
+		</group>
+		<background>
+			<band height="793"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="0"
+						y="340"
+						width="503"
+						height="124"
+						forecolor="#CCCCCC"
+						key="staticText-146"
+						isPrintRepeatedValues="false">
+							<printWhenExpression><![CDATA[$P{previewFlg}]]></printWhenExpression>
+						</reportElement>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="60" isBold="true" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[プレビュー表示]]></text>
+				</staticText>
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="27"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="49"
+						y="15"
+						width="26"
+						height="11"
+						key="staticText-2"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[年度]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="413"
+						y="15"
+						width="19"
+						height="11"
+						key="staticText-4"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[No.]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="1"
+						y="0"
+						width="92"
+						height="15"
+						key="textField-13"/>
+					<box></box>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getModeKbnNm()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="7"
+						y="14"
+						width="38"
+						height="13"
+						key="textField-14"/>
+					<box></box>
+					<textElement>
+						<font size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[jp.co.bsnnet.sofia.utils.JpDateUtils.aDStringToJpImperialString($P{kihon}.getNendo().toString() + "/04/01", "yyyy/MM/dd", "GGGG yyyy 年度")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="432"
+						y="15"
+						width="70"
+						height="11"
+						key="textField-17"/>
+					<box></box>
+					<textElement textAlignment="Right">
+						<font size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getActlChkbn().getChoushoKbn() +
+"-" + 
+new DecimalFormat("000000").format($P{kihon}.getChoushoNo()) +
+"-" +
+$P{kihon}.getUpdateCnt()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="432"
+						y="4"
+						width="70"
+						height="11"
+						key="textField-97"/>
+					<box></box>
+					<textElement textAlignment="Right">
+						<font size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{kihon}.getActlYoshiki().getPrint01Char()]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="34"  isSplitAllowed="true" >
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="0"
+						width="0"
+						height="34"
+						key="line-9"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="503"
+						y="0"
+						width="0"
+						height="34"
+						key="line-11"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="0"
+						y="33"
+						width="504"
+						height="0"
+						key="line-12"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="24"
+						y="0"
+						width="0"
+						height="33"
+						key="line-15"
+						positionType="FixRelativeToBottom"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="0"
+						y="11"
+						width="25"
+						height="11"
+						key="textField-33"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{lineNo}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="25"
+						y="22"
+						width="263"
+						height="0"
+						key="line-133"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="24"
+						y="11"
+						width="89"
+						height="11"
+						key="textField-82"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{amstKamokuDto}.kmk4().getKamokuRNm()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="385"
+						y="17"
+						width="15"
+						height="11"
+						key="staticText-141"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[円]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="203"
+						y="11"
+						width="85"
+						height="11"
+						key="textField-83"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{actlCodeTaxKbn}.getTaxNm()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="77"
+						y="22"
+						width="13"
+						height="12"
+						key="textField-84"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[org.apache.commons.lang.StringUtils.substring($F{amstKamokuDto}.getKamokuCd(),4,6)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="400"
+						y="22"
+						width="103"
+						height="11"
+						key="textField-85"/>
+					<box leftPadding="2"></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{amstCustomerDto}.getCustomerRNm()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="64"
+						y="22"
+						width="13"
+						height="12"
+						key="textField-86"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[org.apache.commons.lang.StringUtils.substring($F{amstKamokuDto}.getKamokuCd(),2,4)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0;-#,##0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="288"
+						y="11"
+						width="97"
+						height="22"
+						key="textField-87"/>
+					<box rightPadding="1"></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="11" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Long"><![CDATA[$F{inputKingaku}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="202"
+						y="11"
+						width="0"
+						height="22"
+						key="line-135"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="24"
+						y="0"
+						width="24"
+						height="11"
+						key="textField-88"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{tekiyouCd}]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="113"
+						y="11"
+						width="0"
+						height="22"
+						key="line-136"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="400"
+						y="11"
+						width="0"
+						height="22"
+						key="line-137"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" pattern="###0.0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="215"
+						y="22"
+						width="31"
+						height="11"
+						key="textField-89"/>
+					<box rightPadding="1"></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Double"><![CDATA[$F{taxRate}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="400"
+						y="11"
+						width="103"
+						height="11"
+						key="textField-90"/>
+					<box leftPadding="2"></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{amstCustomerDto}.getCustomerCd()]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="25"
+						y="11"
+						width="478"
+						height="0"
+						key="line-138"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="173"
+						y="22"
+						width="13"
+						height="12"
+						key="textField-91"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[( $F{amstKamokuDto}.getKamokuCd().length() < 9 ? "00" :
+	org.apache.commons.lang.StringUtils.substring($F{amstKamokuDto}.getKamokuCd(),8,10)
+)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="51"
+						y="22"
+						width="13"
+						height="12"
+						key="textField-92"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[org.apache.commons.lang.StringUtils.substring($F{amstKamokuDto}.getKamokuCd(),0,2)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="114"
+						y="11"
+						width="89"
+						height="11"
+						key="textField-93"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Bottom">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{amstKamokuDto}.kmk5().getKamokuRNm()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="90"
+						y="22"
+						width="13"
+						height="12"
+						key="textField-94"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" size="10"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[org.apache.commons.lang.StringUtils.substring($F{amstKamokuDto}.getKamokuCd(),6,8)]]></textFieldExpression>
+				</textField>
+				<line direction="TopDown">
+					<reportElement
+						x="287"
+						y="11"
+						width="0"
+						height="22"
+						key="line-139"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="400"
+						y="22"
+						width="103"
+						height="0"
+						key="line-140"/>
+					<graphicElement stretchType="NoStretch">
+					<pen lineWidth="0.22" lineStyle="Solid"/>
+</graphicElement>
+				</line>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						style="MSゴシック"
+						x="48"
+						y="0"
+						width="454"
+						height="11"
+						key="textField-96"/>
+					<box leftPadding="4"></box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="ＭＳ ゴシック" pdfFontName="HeiseiKakuGo-W5" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[org.apache.commons.lang.StringUtils.substring($F{tekiyou},0,45)]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="246"
+						y="22"
+						width="15"
+						height="11"
+						key="staticText-142"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[％]]></text>
+				</staticText>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+				<printWhenExpression><![CDATA[Boolean.valueOf($V{PAGE_NUMBER}.intValue() == 1)]]></printWhenExpression>
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>
