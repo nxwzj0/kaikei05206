@@ -191,7 +191,7 @@
 						style="MSゴシック"
 						x="77"
 						y="94"
-						width="163"
+						width="187"
 						height="11"
 						key="textField-2"
 						positionType="FixRelativeToBottom"/>
@@ -392,9 +392,9 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
-						x="333"
+						x="371"
 						y="83"
-						width="170"
+						width="132"
 						height="11"
 						key="textField-16"
 						positionType="FixRelativeToBottom"/>
@@ -918,9 +918,9 @@
 				</staticText>
 				<staticText>
 					<reportElement
-						x="240"
+						x="270"
 						y="83"
-						width="73"
+						width="94"
 						height="11"
 						key="staticText-287"
 						positionType="FixRelativeToBottom"/>
@@ -928,7 +928,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[所　　　　属]]></text>
+				<text><![CDATA[所　　  　　属]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
@@ -949,7 +949,7 @@
 						style="MSゴシック"
 						x="77"
 						y="83"
-						width="163"
+						width="187"
 						height="11"
 						key="textField-155"
 						positionType="FixRelativeToBottom"/>
@@ -961,9 +961,9 @@
 				</textField>
 				<staticText>
 					<reportElement
-						x="240"
+						x="270"
 						y="94"
-						width="73"
+						width="94"
 						height="11"
 						key="staticText-289"
 						positionType="FixRelativeToBottom"/>
@@ -971,13 +971,13 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[決 裁 年月日]]></text>
+				<text><![CDATA[決 裁 年 月 日]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="333"
+						x="371"
 						y="94"
-						width="170"
+						width="132"
 						height="11"
 						key="staticText-290"
 						positionType="FixRelativeToBottom"/>
@@ -985,7 +985,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[　　　　　年　　   月　　  日]]></text>
+				<text><![CDATA[　　　　　　年　　月　　日]]></text>
 				</staticText>
 			</band>
 			</groupHeader>

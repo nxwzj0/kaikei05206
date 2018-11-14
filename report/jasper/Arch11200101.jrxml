@@ -378,9 +378,9 @@
 				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
 					<reportElement
 						style="MSゴシック"
-						x="329"
+						x="371"
 						y="83"
-						width="175"
+						width="132"
 						height="11"
 						key="textField-16"
 						positionType="FixRelativeToBottom"/>
@@ -948,20 +948,6 @@
 				</staticText>
 				<staticText>
 					<reportElement
-						x="254"
-						y="83"
-						width="73"
-						height="11"
-						key="staticText-323"
-						positionType="FixRelativeToBottom"/>
-					<box></box>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
-					</textElement>
-				<text><![CDATA[所　　　　属]]></text>
-				</staticText>
-				<staticText>
-					<reportElement
 						x="0"
 						y="83"
 						width="73"
@@ -991,31 +977,45 @@
 				</textField>
 				<staticText>
 					<reportElement
-						x="254"
+						x="270"
 						y="94"
-						width="73"
+						width="94"
 						height="11"
-						key="staticText-325"
+						key="staticText-327"
 						positionType="FixRelativeToBottom"/>
 					<box></box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[決 裁 年月日]]></text>
+				<text><![CDATA[決 裁 年 月 日]]></text>
 				</staticText>
 				<staticText>
 					<reportElement
-						x="329"
-						y="94"
-						width="175"
+						x="371"
+						y="93"
+						width="132"
 						height="11"
-						key="staticText-326"
+						key="staticText-328"
 						positionType="FixRelativeToBottom"/>
 					<box></box>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
 					</textElement>
-				<text><![CDATA[　　　　　　年　　   月　　   日]]></text>
+				<text><![CDATA[　　　　　　年　　月　　日]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="270"
+						y="83"
+						width="94"
+						height="11"
+						key="staticText-329"
+						positionType="FixRelativeToBottom"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="ＭＳ 明朝" pdfFontName="HeiseiMin-W3" pdfEncoding ="UniJIS-UCS2-HW-H"/>
+					</textElement>
+				<text><![CDATA[所　　  　　属]]></text>
 				</staticText>
 			</band>
 			</groupHeader>
